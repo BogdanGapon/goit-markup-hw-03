@@ -168,6 +168,7 @@ header a {
 
 /* ======SECTION OPPORTUNITIES START======= */
 
+/* Утилита скрытия текста */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -190,7 +191,7 @@ header a {
 }
 
 .list-box .item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 31px;
 }
 
 .small-title {
@@ -201,6 +202,7 @@ header a {
   text-transform: uppercase;
   color: var(--dark-color);
   font-size: var(--font-text);
+  font-weight: 700;
 }
 
 .text-title {
@@ -209,19 +211,9 @@ header a {
   line-height: 1.71;
 }
 
-.section-title {
-  margin-bottom: 50px;
-
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: var(--dark-color);
-}
 /* ======SECTION OPPORTUNITIES END======= */
 
-/* ======SECTION ABOUT US END======= */
+/* ======SECTION ABOUT US START======= */
 .section-about-us {
   padding-top: 0;
 }
@@ -239,6 +231,17 @@ header a {
   margin-top: 30px;
 }
 
+.section-title {
+  margin-bottom: 50px;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--dark-color);
+}
+
 /* ======SECTION ABOUT US END======= */
 
 /* ======SECTION COMMAND START====== */
@@ -249,13 +252,12 @@ header a {
 .flex-box-pic {
   display: flex;
   flex-basis: calc((100% - 120px) / 4);
-  margin-top: -30px;
+
   margin-left: -30px;
 }
 
 .item-pic {
   margin-left: 30px;
-  margin-top: 30px;
 
   text-align: center;
   background: #ffffff;
@@ -291,14 +293,34 @@ header a {
 /* ======SECTION COMMAND END====== */
 
 /* =======PAGE PORTFOLIO START====== */
+.section-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.btn-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+
+.btn-list > .item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .button-portfolio {
-  cursor: pointer;
+  border: 0;
+  padding: 6px 22px;
+
   font-family: 'Roboto', sans-serif;
-  color: var(--dark-color);
-  font-size: 16px;
   font-weight: var(--font-weight-main);
+  font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  color: var(--dark-color);
+  background: #f5f4fa;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .button-portfolio:hover,
@@ -309,7 +331,31 @@ header a {
   border-radius: 4px;
 }
 
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.cards-list > .item {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.text-card {
+  padding: 20px 24px;
+
+  background: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
 .portfolio-title {
+  margin-bottom: 4px;
+
   color: var(--dark-color);
   font-size: 18px;
   line-height: 2;
@@ -327,7 +373,7 @@ header a {
 /* ======FOOTER START====== */
 .footer {
   background: #2f303a;
-  padding: 60px 0;
+  padding: 60px;
 }
 
 .footer-logo {
