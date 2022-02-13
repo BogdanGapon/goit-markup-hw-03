@@ -123,7 +123,8 @@ header a {
 
 /* =======HERO START====== */
 .hero-section {
-  padding: 200px;
+  padding-bottom: 200px;
+  padding-top: 200px;
 }
 
 .hero {
@@ -190,8 +191,12 @@ header a {
   display: flex;
 }
 
+.list-box > .item {
+  width: 270px;
+}
+
 .list-box .item:not(:last-child) {
-  margin-right: 31px;
+  margin-right: 30px;
 }
 
 .small-title {
@@ -301,7 +306,7 @@ header a {
 .btn-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .btn-list > .item:not(:last-child) {
@@ -373,7 +378,8 @@ header a {
 /* ======FOOTER START====== */
 .footer {
   background: #2f303a;
-  padding: 60px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .footer-logo {
